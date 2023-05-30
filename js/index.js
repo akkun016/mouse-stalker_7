@@ -1,12 +1,13 @@
 $(function(){
-  let mouseX = 0, mouseY = 0;
-  let stalkerX = 0, stalkerY = 0;
+  let mouseX = 0;
+  let mouseY = 0;
+  let stalkerX = 0;
+  let stalkerY = 0;
   const stalker = $(".mouse-stalker");
   
   $(document).mousemove(function(e) {
     mouseX = e.pageX;
     mouseY = e.pageY;
-    console.log(mouseX + ":" + mouseY);
   });
   
   setInterval(function() {
